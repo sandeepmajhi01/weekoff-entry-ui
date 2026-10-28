@@ -1,16 +1,89 @@
-# React + Vite
+# Week-off Entry UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive work-calendar configuration interface built with React and Tailwind CSS. The application allows users to configure weekly holidays and manage full-day and half-day working schedules.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive work-calendar interface.
+- Select or deselect individual weekdays and week numbers.
+- Select all weeks for a particular day.
+- Toggle **Half working day & half weekend** mode.
+- Configure individual week timings as Full Day, 1st Half, or 2nd Half.
+- Saturday selected by default.
+- Save calendar configuration and inspect the resulting data in the browser console.
+- Reset the calendar using the Cancel button.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Tailwind CSS
+- Lucide React
+- JavaScript
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js (LTS recommended)
+- npm
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone <YOUR_REPOSITORY_URL>
+cd <YOUR_PROJECT_FOLDER>
+```
+
+Replace the repository URL and folder name with the actual values.
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the localhost URL displayed in your terminal, usually `http://localhost:5173`.
+
+## How to Use
+
+1. Open the application.
+2. Select or deselect the desired weekdays and week numbers.
+3. Use the **All** checkbox to toggle all five weeks for a particular day.
+4. Enable **Half working day & half weekend** to display individual week checkboxes and timing dropdowns.
+5. Choose the appropriate timing for each week.
+6. Click **Save** to inspect the selected calendar configuration in the browser console.
+7. Click **Cancel** to reset the calendar.
+
+## Project Structure
+
+```text
+.
+├── src/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── public/
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
+```
+
+The exact structure may vary slightly depending on the project setup.
+
+## Current Limitations
+
+- Calendar data is logged to the browser console and is not persisted to a database.
+- There is no authentication or backend integration.
+- The calendar-year definition section is a placeholder if it has not yet been implemented.
+
+## License
+
+Add a license if you intend to distribute the project under specific terms.
